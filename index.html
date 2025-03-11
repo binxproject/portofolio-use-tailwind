@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portofolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portofolio Binx</title>
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
     <!-- nav start -->
     <nav id="nav" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container py-2 lg:max-w-6xl lg:mx-auto">
-            <div class="flex items-center justify-around relative">
+            <div class="flex items-center justify-between relative">
                 <div class="px-4 flex-1">
-                    <a href="#"
-                        class="text-2xl font-bold text-indigo-500 hover:text-indigo-600 active:text-indigo-700">Binx
-                        Ultraman</a>
+                    <a href="#" class="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-slate-900 text-transparent bg-clip-text hover:to-indigo-500">Binx Ultraman</a>
                 </div>
 
                 <div class="flex px-4 items-center lg:hidden">
@@ -31,29 +29,29 @@
                     class="absolute bg-white py-4 shadow-lg rounded-lg max-w-[250px] w-full top-full right-4 hidden lg:block lg:static lg:bg-transparent lg:max-w-3xl lg:shadow-none lg:rounded-none">
                     <ul class="block lg:flex">
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Beranda</a>
+                            <a href="#"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Beranda</a>
                         </li>
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Tentang
+                            <a href="#about"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Tentang
                                 Saya</a>
                         </li>
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Portofolio</a>
+                            <a href="#portofolio"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Portofolio</a>
                         </li>
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Clients</a>
+                            <a href="#clients"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Clients</a>
                         </li>
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Blog</a>
+                            <a href="#blog"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Blog</a>
                         </li>
                         <li class="group cursor-pointer">
-                            <a href=""
-                                class="text-base text-slate-900 py-1 mx-8 flex group-hover:text-indigo-500 lg:font-semibold">Contact</a>
+                            <a href="#contact"
+                                class="text-base md:text-lg text-slate-900 py-1 px-4 mx-2 flex group-hover:text-indigo-500 lg:font-semibold">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +61,7 @@
     <!-- nav end -->
 
     <!-- hero start -->
-    <section id="hero" class="h-screen flex items-center py-8 px-4  ">
+    <section id="hero" class="h-screen flex items-center py-8 px-4">
         <div class="md:flex lg:max-w-6xl lg:mx-auto ">
             <div class="container md:w-1/2 md:pl-16">
                 <h1 class="h1">Halo.... 👋, nama saya <span
@@ -76,7 +74,7 @@
                     Saya</a>
             </div>
             <div class="container mt-8 flex justify-center relative md:w-1/2 pt-5 lg:pt-0">
-                <img src="img/patrick-star.png" alt="Gambar Profil Patrick Star"
+                <img src="public/img/patrick-star.png" alt="Gambar Profil Patrick Star"
                     class="mx-auto lg:scale-125 xl:scale-150">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
                     class="absolute -bottom-20 -z-10 w-96 h-96 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px]">
@@ -90,15 +88,15 @@
     <!-- hero end -->
 
     <!-- about start -->
-    <section id="about" class="py-8 px-4">
+    <section id="about" class="py-16 lg:py-24 px-4">
+        <h1 class="h1 text-center lg:mb-8">Tentang Saya</h1>
         <div class="md:flex md:px-16 lg:max-w-6xl mx-auto lg:px-16">
-            <div class="container pt-10 md:w-1/2 md:pt-24 md:pr-2">
-                <h1 class="h1 text-center">Tentang Saya</h1>
+            <div class="container md:w-1/2  md:pr-2">
                 <h2 class="h2">Mari Belajar Programming</h2>
                 <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam deleniti, magnam sint
                     reiciendis unde fugiat ducimus odit molestias beatae nobis.</p>
             </div>
-            <div class="container md:w-1/2 md:pt-36 md:pl-2">
+            <div class="container md:w-1/2 md:pl-2">
                 <h2 class="h2">Mari Berteman</h2>
                 <p class="p mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur vero veniam
                     excepturi qui eius hic sit ad voluptatum quaerat dolore.</p>
@@ -150,7 +148,7 @@
     <!-- about end -->
 
     <!-- portofolio start -->
-    <section class="py-8 px-4 bg-slate-100">
+    <section id="portofolio" class="py-16 lg:py-24 px-4 bg-slate-100">
         <div class="container mx-auto">
             <div class="w-full">
                 <div class="max-w-xl text-center mx-auto">
@@ -164,7 +162,7 @@
             <div class="flex w-full flex-wrap">
                 <div class="w-full md:w-1/2 pb-6 md:p-5 lg:p-8">
                     <a href="#" class="rounded-lg overflow-hidden">
-                        <img src="img/portofolio/portofolio-1.png" alt="" class="">
+                        <img src="public/img/portofolio/portofolio-1.png" alt="Project 1" class="">
                     </a>
                     <h3 class="h3">Web Portofolio menggunakan TailwindCSS v3.4</h3>
                     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, inventore!</p>
@@ -174,7 +172,7 @@
                 </div>
                 <div class="w-full md:w-1/2 pb-6 md:p-5 lg:p-8">
                     <a href="#" class="rounded-lg overflow-hidden">
-                        <img src="img/portofolio/portofolio-1.png" alt="" class="">
+                        <img src="public/img/portofolio/portofolio-1.png" alt="Project 1" class="">
                     </a>
                     <h3 class="h3">Web Portofolio menggunakan TailwindCSS v3.4</h3>
                     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, inventore!</p>
@@ -184,7 +182,7 @@
                 </div>
                 <div class="w-full md:w-1/2 pb-6 md:p-5 lg:p-8">
                     <a href="#" class="rounded-lg overflow-hidden">
-                        <img src="img/portofolio/portofolio-1.png" alt="" class="">
+                        <img src="public/img/portofolio/portofolio-1.png" alt="Project 1" class="">
                     </a>
                     <h3 class="h3">Web Portofolio menggunakan TailwindCSS v3.4</h3>
                     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, inventore!</p>
@@ -192,13 +190,14 @@
                         class="bg-indigo-500 text-base py-2 px-4 rounded-full text-white hover:bg-indigo-600 active:bg-indigo-700 shadow-lg md:px-5 md:text-xl">Kunjungi
                         Web</a>
                 </div>
+                
             </div>
         </div>
     </section>
     <!-- portofolio end -->
 
     <!-- clients start -->
-    <section class="py-8 px-4 bg-slate-700">
+    <section id="clients" class="py-16 lg:py-24 px-4 bg-slate-800">
         <div class="container mx-auto">
             <div class="w-full">
                 <div class="max-w-xl text-center mx-auto">
@@ -212,16 +211,16 @@
             <div class="w-full">
                 <div class="flex flex-wrap justify-center items-center">
                     <a href="" class="max-w-28 mx-8 py-4   opacity-50 hover:opacity-100">
-                        <img src="img/clients/amd.svg" alt="" class="scale-125">
+                        <img src="public/img/clients/amd.svg" alt="Logo Amd" class="lg:scale-110 xl:scale-125">
                     </a>
                     <a href="" class="max-w-28 mx-8 py-4  opacity-50 hover:opacity-100">
-                        <img src="img/clients/intel.svg" alt="" class="scale-125">
+                        <img src="public/img/clients/intel.svg" alt="Logo Intel" class="lg:scale-110 xl:scale-125">
                     </a>
                     <a href="" class="max-w-28 mx-8 py-4  opacity-50 hover:opacity-100">
-                        <img src="img/clients/nvidia.svg" alt="" class="scale-125">
+                        <img src="public/img/clients/nvidia.svg" alt="Logo Nvidia" class="lg:scale-110 xl:scale-125">
                     </a>
                     <a href="" class="max-w-28 mx-8 py-4  opacity-50 hover:opacity-100">
-                        <img src="img/clients/asus.svg" alt="" class="scale-125">
+                        <img src="public/img/clients/asus.svg" alt="Logo Asus Rog" class="lg:scale-110 xl:scale-125">
                     </a>
                 </div>
             </div>
@@ -230,7 +229,7 @@
     <!-- clients end -->
 
     <!-- blog start -->
-    <section class="py-8 px-4">
+    <section id="blog" class="py-16 lg:py-24 px-4">
         <div class="container mx-auto">
             <div class="w-full">
                 <div class="max-w-xl text-center mx-auto">
@@ -245,7 +244,7 @@
 
                 <div class="w-full md:w-1/2 md:p-4 lg:w-1/3">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden ">
-                        <img src="img/blog/mobile-legend.jpg" alt="" class="w-full">
+                        <img src="public/img/blog/mobile-legend.jpg" alt="Gambar Mobile Legend" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
                             <h2 class="h3 truncate">Tips and Trick Bermain Assassin di Mobile Legend</h2>
                             <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, eligendi.
@@ -258,7 +257,7 @@
 
                 <div class="w-full md:w-1/2 md:p-4  lg:w-1/3 ">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden">
-                        <img src="img/blog/article.jpg" alt="" class="w-full">
+                        <img src="public/img/blog/article.jpg" alt="Gambar Artikel" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
                             <h2 class="h3 truncate">Cara Baca Koran dengan Cepat</h2>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, omnis? A molestiae quaerat harum eius.
@@ -271,7 +270,7 @@
 
                 <div class="w-full md:w-1/2 md:p-4 lg:w-1/3  ">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden">
-                        <img src="img/blog/vga.jpg" alt="" class="w-full">
+                        <img src="public/img/blog/vga.jpg" alt="Gambar Vga Card" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
                             <h2 class="h3 truncate">Vga Card Terbaik Tahun ini</h2>
                             <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, eligendi.
@@ -291,7 +290,76 @@
     </section>
     <!-- blog end -->
 
-    <script src="js/script.js"></script>
+    <!-- contact start -->
+    <section id="contact" class="py-16 lg:py-24 px-4">
+        <div class="container max-w-xl mx-auto">
+            <div class="w-full mb-4">
+                <div class="max-w-xl text-center mx-auto">
+                    <h1 class="h1">Contact</h1>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="mb-4">
+                    <label for="nama" class="text-base md:text-lg font-semibold">Nama :</label>
+                    <input type="text" id="nama" placeholder="Masukkan Nama Anda..." class="w-full bg-slate-100 border-2 rounded-full p-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-base md:text-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="text-base md:text-lg font-semibold">Email :</label>
+                    <input type="text" id="email" placeholder="Masukkan Email Anda..." class="w-full bg-slate-100 border-2 rounded-full p-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-base md:text-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="massage" class="text-base md:text-lg font-semibold">Pesan :</label>
+                    <textarea id="massage" placeholder="Masukkan Pesan..." class="h-32 border-2 w-full bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 p-2 text-base md:text-lg"></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="w-full md:max-w-32 bg-indigo-500 text-white rounded-full py-1 hover:bg-indigo-600 active:bg-indigo-700 text-base md:text-lg">Kirim</button>
+                </div>
+            </form>
+            
+
+            
+        </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="py-16 px-4 md:px-8 bg-slate-800">
+        <div class="container mx-auto">
+            <div class="w-full flex flex-wrap ">
+                <div class="w-full md:w-1/3 mb-5">
+                    <h3 class="h3 mb-1 text-white">Hubungi Kami</h3>
+                    <p class="p mb-0 text-slate-300">binx@gmail.com</p>
+                    <p class="p mb-0 text-slate-300">Jl. Naga Terbang No. 000</p>
+                    <p class="p mb-0 text-slate-300">Semarang, Jawa Tengah</p>
+                </div>
+
+                <div class="w-full md:w-1/3 flex flex-col md:gap-1 mb-5">
+                    <h3 class="h3 text-white mb-1">Menu</h3>
+                    <a href="#" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Beranda</a>
+                    <a href="#about" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Tentang Saya</a>
+                    <a href="#portofolio" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Portofolio</a>
+                    <a href="#clients" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Clients</a>
+                    <a href="#blog" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Blog</a>
+                    <a href="#contact" class="text-base md:text-lg text-slate-300 hover:text-indigo-400 active:text-indigo-500">Contact</a>
+                </div>
+
+                <div class="w-full md:w-1/3">
+                    <h3 class="h3 text-white mb-1">Lihat di Google Maps</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126715.84304947393!2d110.33466419211946!3d-7.024552227718843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d3f0d024d%3A0x1e0432b9da5cb9f2!2sKota%20Semarang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1741693998097!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-48 xl:h-72"></iframe>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <div class="w-full bg-slate-900 min-h-16 flex justify-center items-center">
+        <p class="text-base md:text-lg text-white ">Website ini dibuat oleh <span class="text-indigo-400 font-bold hover:text-indigo-500 active:text-indigo-600">Binx</span> | &copy;2025</p>
+    </div>
+    <!-- footer end -->
+
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>

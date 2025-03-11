@@ -25,5 +25,3 @@ hamburgerMenu.addEventListener('click', function() {
     }
 });
 
-
-
