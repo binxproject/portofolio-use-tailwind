@@ -234,16 +234,16 @@
         <div class="container mx-auto">
             <div class="w-full">
                 <div class="max-w-xl text-center mx-auto">
-                    <h1 class="h1">Blog</h1>
-                    <h2 class="h2">Update Terkini</h2>
-                    <p class="p-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus
+                    <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Blog</h1>
+                    <h2 class="h2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Update Terkini</h2>
+                    <p class="p-light" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus
                         repellendus vitae laudantium!</p>
                 </div>
             </div>
 
             <div class="flex flex-wrap">
 
-                <div class="w-full md:w-1/2 md:p-4 lg:w-1/3">
+                <div class="w-full md:w-1/2 md:p-4 lg:w-1/3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden ">
                         <img src="public/img/blog/mobile-legend.jpg" alt="Gambar Mobile Legend" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
@@ -256,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 md:p-4  lg:w-1/3 ">
+                <div class="w-full md:w-1/2 md:p-4  lg:w-1/3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden">
                         <img src="public/img/blog/article.jpg" alt="Gambar Artikel" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
@@ -269,7 +269,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 md:p-4 lg:w-1/3  ">
+                <div class="w-full md:w-1/2 md:p-4 lg:w-1/3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="mb-10 md:mb-4 pb-4 shadow-lg rounded-lg overflow-hidden">
                         <img src="public/img/blog/vga.jpg" alt="Gambar Vga Card" class="w-full h-48 lg:h-56 xl:h-64 object-cover">
                         <div class="p-4">
@@ -366,7 +366,27 @@
         AOS.init();
         AOS.init({
             once: true
+
         });
+
+        function aosCss() {
+            let screenWidth = window.innerWidth;
+            let offsetValue = 200;
+
+            if(screenWidth <= 576) {
+                offsetValue = 100;
+            } else if(screenWidth > 576 && screenWidth <= 768) {
+                offsetValue = 150;
+            } else if(screenWidth > 768 && screenWidth <= 1024) {
+                offsetValue = 200;
+            } else {
+                offsetValue = 250; //desktop
+            }
+        }
+
+        aosCss();
+
+        window.addEventListener('resize', aosCss());
     </script>
 </body>
 
